@@ -46,7 +46,6 @@
 - PySerial
 
 安装依赖：
-```bash
 pip install opencv-python numpy pyserial
 STM32 端
 STM32CubeMX + HAL 库
@@ -55,23 +54,16 @@ Keil / STM32CubeIDE 编译工具
 
 🚀 使用方法
 1️⃣ 运行 HSV 调试工具（可选）
-bash
-复制
-编辑
+
 python test.py
 调节滑块，获取红点与白线的 HSV 阈值，并更新到 main.py。
 
 2️⃣ 启动主程序（PC 端）
-bash
-复制
-编辑
+
 python main.py
 摄像头画面中检测到红点与白线，会实时计算误差并通过串口发送。
 
 数据格式：
-
-复制
-编辑
 dx_int,dy_int\n
 其中 dx_int 和 dy_int 为放大 100 倍的整数误差。
 
@@ -92,9 +84,7 @@ Y 轴：向上为正（图像坐标需反转 Y）。
 归一化：以画面半宽、半高为单位，误差范围 [-1.0, 1.0]。
 
 🔌 串口通信协议图
-text
-复制
-编辑
+
 Python(OpenCV) → Serial → STM32
 
 [图像处理]   计算红点-白线误差
@@ -122,9 +112,8 @@ text
 🛠 PID 参数调试
 STM32 端的 pid_base 和 pid_arm 分别控制底座与机械臂：
 
-c
-复制
-编辑
+
+
 pid_t pid_base = { .kp = -1.0f, .ki = 0.0f, .kd = 1.0f, .max_speed = 2.0f };
 pid_t pid_arm  = { .kp =  1.0f, .ki = 0.0f, .kd = 1.0f, .max_speed = 2.0f };
 调试建议：
@@ -146,8 +135,7 @@ pid_t pid_arm  = { .kp =  1.0f, .ki = 0.0f, .kd = 1.0f, .max_speed = 2.0f };
 MIT License — 可自由使用、修改与分发。
 
 
-复制
-编辑
+
 
 ---
 
@@ -155,3 +143,4 @@ MIT License — 可自由使用、修改与分发。
 如果你需要的话，我还可以帮你画成 **真正的 SVG/PNG 图**，让 GitHub 页面看起来更直观，不只是文字版。  
 
 你要我帮你画成可视化的协议图和工作区图吗？这样你的项目看起来会更专业。
+
