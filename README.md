@@ -15,14 +15,15 @@
 ---
 
 ## 🗂 文件结构
-
-├── main.py # 摄像头+串口，计算并发送归一化坐标误差
-├── test.py # HSV 阈值调试工具
-├── main.c # STM32 主循环
-├── servo_app.c/h # 舵机控制逻辑、PID、误差解析
-├── servo_interp.c/h # 舵机插值与平滑控制
-└── README.md # 项目说明
-
+```
+.
+├── main.py           # 摄像头+串口，计算并发送归一化坐标误差
+├── test.py           # HSV 阈值调试工具
+├── main.c            # STM32 主循环
+├── servo_app.c/h     # 舵机控制逻辑、PID、误差解析
+├── servo_interp.c/h  # 舵机插值与平滑控制
+└── README.md         # 项目说明
+```
 
 
 
@@ -140,6 +141,7 @@ pid_t pid_arm  = { .kp =  1.0f, .ki = 0.0f, .kd = 1.0f, .max_speed = 2.0f };
 
 ## 📄 许可证
 MIT License — 可自由使用、修改与分发。
+
 
 
 
