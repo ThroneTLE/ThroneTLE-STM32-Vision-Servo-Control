@@ -1,0 +1,5 @@
+E:/Throne_WorkSpace/E_C/2Dgimbal/cmake-build-debug/CMakeFiles/2Dgimbal.dir
+E:/Throne_WorkSpace/E_C/2Dgimbal/cmake-build-debug/CMakeFiles/edit_cache.dir
+E:/Throne_WorkSpace/E_C/2Dgimbal/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+E:/Throne_WorkSpace/E_C/2Dgimbal/cmake-build-debug/cmake/stm32cubemx/CMakeFiles/edit_cache.dir
+E:/Throne_WorkSpace/E_C/2Dgimbal/cmake-build-debug/cmake/stm32cubemx/CMakeFiles/rebuild_cache.dir

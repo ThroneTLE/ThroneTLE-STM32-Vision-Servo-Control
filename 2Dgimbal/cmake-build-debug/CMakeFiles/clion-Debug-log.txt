@@ -1,0 +1,17 @@
+E:\ST\STM32CubeCLT_1.18.0\CMake\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=E:/ST/STM32CubeCLT_1.18.0/Ninja/bin/ninja.exe -DCMAKE_C_COMPILER=E:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/arm-none-eabi-gcc.exe -DCMAKE_CXX_COMPILER=E:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/arm-none-eabi-c++.exe -G Ninja -S E:\Throne_WorkSpace\E_C\2Dgimbal -B E:\Throne_WorkSpace\E_C\2Dgimbal\cmake-build-debug
+Build type: Debug
+-- Configuring done (5.3s)
+You have changed variables that require your cache to be deleted.
+Configure will be re-run and you may have to reset some variables.
+The following variables have changed:
+CMAKE_CXX_COMPILER= E:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/arm-none-eabi-c++.exe
+CMAKE_CXX_COMPILER= E:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/arm-none-eabi-c++.exe
+
+-- The C compiler identification is GNU 13.3.1
+-- The ASM compiler identification is GNU
+-- Found assembler: E:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/arm-none-eabi-gcc.exe
+-- The CXX compiler identification is GNU 13.3.1
+Build type: Debug
+-- Configuring done (11.8s)
+-- Generating done (0.0s)
+-- Build files have been written to: E:/Throne_WorkSpace/E_C/2Dgimbal/cmake-build-debug
