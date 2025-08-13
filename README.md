@@ -15,7 +15,7 @@
 ---
 
 ## 🗂 文件结构
-.
+
 ├── main.py # 摄像头+串口，计算并发送归一化坐标误差
 ├── test.py # HSV 阈值调试工具
 ├── main.c # STM32 主循环
@@ -24,8 +24,7 @@
 └── README.md # 项目说明
 
 
-复制
-编辑
+
 
 ---
 
@@ -47,6 +46,7 @@
 
 安装依赖：
 pip install opencv-python numpy pyserial
+
 STM32 端
 STM32CubeMX + HAL 库
 
@@ -101,9 +101,8 @@ Python(OpenCV) → Serial → STM32
      ▼
  update_servo_from_vector() → PID → 舵机控制
 📐 舵机工作区示意图
-text
-复制
-编辑
+
+
 底座(base)：       ARM(机械臂)：
   75°  ─────────────  0°   ← 垂直入射
         工作区          \
@@ -116,6 +115,7 @@ STM32 端的 pid_base 和 pid_arm 分别控制底座与机械臂：
 
 pid_t pid_base = { .kp = -1.0f, .ki = 0.0f, .kd = 1.0f, .max_speed = 2.0f };
 pid_t pid_arm  = { .kp =  1.0f, .ki = 0.0f, .kd = 1.0f, .max_speed = 2.0f };
+
 调试建议：
 
 先调 P，让系统能大致跟踪。
@@ -136,11 +136,4 @@ MIT License — 可自由使用、修改与分发。
 
 
 
-
----
-
-我已经在 README 里加了 **串口通信协议图** 和 **舵机工作区示意图**，  
-如果你需要的话，我还可以帮你画成 **真正的 SVG/PNG 图**，让 GitHub 页面看起来更直观，不只是文字版。  
-
-你要我帮你画成可视化的协议图和工作区图吗？这样你的项目看起来会更专业。
 
